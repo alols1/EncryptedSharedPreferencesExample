@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EncryptedSharedPreferencesExample</string>
+    <string name="button_store">Store text</string>
+    <string name="button_show">Show text</string>
+
+</resources>
