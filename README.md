@@ -28,6 +28,19 @@ The important parts are:
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 ```
+
+======================
+
+Quality for Android
+-------
+You will find under the directory /config the base configuration to run quality test on the project.
+The followings tools are used:
+ - Checkstyle.
+ - Findbugs.
+ - PMD.
+ - Lint.
+ 
+By default, all the reports will be generated in the folder app/build/reports.
  
 ======================
 
