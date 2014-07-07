@@ -8,6 +8,7 @@ It is meant to use my library, EncryptedSharedPreferences, remotely through grad
 The important parts are:
 
 - General build.gradle:
+
 ```
  allprojects {
     repositories {
@@ -20,12 +21,13 @@ The important parts are:
  ```
  
  - app build.gradle:
- ```
+ 
+```
  dependencies {
     compile 'com.og.encryptedsharedpreferences:encryptedsharedpreferences:1.0.0@aar'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
- ```
+```
  
 ======================
 
