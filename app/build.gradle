@@ -23,4 +23,5 @@ android {
 dependencies {
     compile 'com.og.encryptedsharedpreferences:encryptedsharedpreferences:1.0.0@aar'
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.0.+'
 }
