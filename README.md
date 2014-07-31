@@ -31,6 +31,15 @@ The important parts are:
 
 ======================
 
+Testing for Android using Robotium
+-------
+You will find under the directory app/src/androidTest some java testing using Robotium.
+Robotium is derived from Junit, and allow to simply implement some instrumentation and unit testing !
+
+Simply click right on the folder to launch the Android tests, or do your own gradle target to run it with tests etc...
+
+======================
+
 Quality for Android
 -------
 You will find under the directory /config the base configuration to run quality test on the project.
