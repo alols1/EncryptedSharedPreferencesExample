@@ -1,0 +1,27 @@
+configurations { spoon }
+
+dependencies {
+    spoon 'com.squareup.spoon:spoon-runner:1.1.1'
+}
+
+def baseGradleTaskName
+def basePathApk
+
+task prepareSpoonProperties() {
+
+    baseGradleTaskName = "assemble"
+    basePathApk = project.buildDir.path + "/outputs/apk/app"
+
+    println "baseGradleTaskName is set to $baseGradleTaskName"
+    println "basePathApk is set to $basePathApk"
+}
+
+task spoon(type: JavaExec, dependsOn: [prepareSpoonProperties, baseGradleTaskName + 'Debug',
+                                       baseGradleTaskName + 'DebugTest']) {
+    main = "com.squareup.spoon.SpoonRunner"
+    classpath = configurations.spoon
+    args '--apk', basePathApk + '-debug-unaligned.apk',
+            '--test-apk', basePathApk + '-debug-test-unaligned.apk',
+            '--output', project.buildDir.path + '/reports/spoon/',
+            '--size', 'large'
+}
