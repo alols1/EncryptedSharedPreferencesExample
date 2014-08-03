@@ -38,7 +38,7 @@ Robotium is derived from Junit, and allow to simply implement some instrumentati
 
 There are two options to launch the tests:
 - Simply click right on the folder to launch the Android tests, or do your own gradle target to run it with tests etc...
-- Launch the spoon custom gradle task, which will use Spoon (from Square) to run the tests and publish a report at the end of it.
+- Launch the spoon custom gradle task, which will use Spoon (from Square) to run the tests and publish a report at the end of it. By default, the report will be generated in the folder app/build/reports.
 
 For more information about spoon, you can consult the website:
 http://square.github.io/spoon/
