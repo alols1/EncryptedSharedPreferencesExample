@@ -55,6 +55,29 @@ The followings tools are used:
  - Lint.
  
 By default, all the reports will be generated in the folder app/build/reports.
+
+======================
+
+Obfuscation for Android
+-------
+
+I activated obfuscation both for debug and release targets, in order to demonstrate the effect even in debug.
+
+```
+buildTypes {
+        debug {
+            runProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            runProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+}
+```
+
+The custom rules are in the file proguard-rules.pro. These custom rules allows to obfuscate and optimize a little bit more than the default android proguard configuration.
+This obfuscation obfuscates also your libraries at compilation. Of course, if you use specific libraries, you may have to improve the proguard custom configuration.
  
 ======================
 
