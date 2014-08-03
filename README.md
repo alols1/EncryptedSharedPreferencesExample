@@ -31,12 +31,17 @@ The important parts are:
 
 ======================
 
-Testing for Android using Robotium
+Testing for Android using Robotium and Spoon
 -------
 You will find under the directory app/src/androidTest some java testing using Robotium.
-Robotium is derived from Junit, and allow to simply implement some instrumentation and unit testing !
+Robotium is derived from Junit, and allow to simply implement some instrumentation and unit testing!
 
-Simply click right on the folder to launch the Android tests, or do your own gradle target to run it with tests etc...
+There are two options to launch the tests:
+- Simply click right on the folder to launch the Android tests, or do your own gradle target to run it with tests etc...
+- Launch the spoon custom gradle task, which will use Spoon (from Square) to run the tests and publish a report at the end of it.
+
+For more information about spoon, you can consult the website:
+http://square.github.io/spoon/
 
 ======================
 
